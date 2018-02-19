@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "461136387940",
+    "firebase_url": "https://carstation-128b6.firebaseio.com",
+    "project_id": "carstation-128b6",
+    "storage_bucket": "carstation-128b6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:461136387940:android:acecbfe056919717",
+        "android_client_info": {
+          "package_name": "com.example.safwat.carstation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "461136387940-ugsaq7r6nhpcalqcfogp3h500goep3f2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4-kB35YkE82WuOy6g1Ndzl7AGR6DBqTY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

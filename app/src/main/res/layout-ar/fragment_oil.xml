@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.example.safwat.carstation.Fragment.OilFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/mergeback"
+        android:scaleType="centerCrop"
+        android:alpha="0.8"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/search_option"
+        >
+
+        <!--date Container-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:background="#2fff"
+            android:layout_marginTop="16dp"
+            android:id="@+id/oil_date"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:layout_weight=".3">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.05"
+                    android:background="@color/colorPrimary"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".95"
+                    android:gravity="right|center_vertical"
+                    android:textColor="#fff"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/date"
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".7"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:id="@+id/oil_date_textView"
+                />
+        </LinearLayout>
+
+        <!--carOwners container-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:background="#2fff"
+            android:layout_below="@+id/oil_date"
+            android:layout_marginTop="16dp"
+            android:id="@+id/carOwner_oil"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:layout_weight=".3">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.05"
+                    android:background="@color/colorPrimary"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".95"
+                    android:gravity="right|center_vertical"
+                    android:textColor="#fff"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/car_name"
+                     />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".7"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:id="@+id/oil_textView"
+                />
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/carOwner_oil"
+            android:id="@+id/car_that_changed_oil"
+            >
+
+        </ListView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/search_option"
+        android:orientation="horizontal"
+        android:background="@drawable/ripple_wrap_button"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:id="@+id/edit_daily_form"
+            android:text="@string/search"
+            android:textSize="28dp"
+            android:padding="4dp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+    <!--progress bar-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/oilProgressPar"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Base.Widget.AppCompat.ProgressBar"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

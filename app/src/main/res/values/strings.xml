@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Car Station</string>
+    <string name="add_driver">أضافة ســائق</string>
+    <string name="add_car">أضافة سيارة</string>
+    <string name="add_daily">أضافة</string>
+    <string name="daily">اليومية</string>
+    <string name="collect_money">حصــر شهــرى</string>
+    <string name="addaccount">إضـــافة حساب</string>
+    <string name="merge">دمــــج</string>
+    <string name="exist">خــــروج</string>
+    <string name="driver_name">أسم السائق</string>
+    <string name="car_name">أسم السيارة</string>
+    <string name="account_name">أسم الحساب</string>
+    <string name="save">حفظ</string>
+    <string name="print">طباعة</string>
+    <string name="search">بحث</string>
+    <string name="searchResult">نتيجة البحث</string>
+    <string name="no_printed_data">لم يتم طباعة الملف لعدم وجود بيانات</string>
+    <string name="print_done">تم حفظ الملف فى ذاكرة الهاتف</string>
+    <string name="save_edit">حفظ التعديل</string>
+    <string name="login" translatable="false">تسجيل الدخول</string>
+    <string name="register" translatable="false">إنشاء حساب</string>
+    <string name="register_done" translatable="false">تم إنشاء الحساب</string>
+    <string name="no_account_data" translatable="false">لا يوجد حسابات لديك</string>
+    <string name="no_car_data">لايوجد سيارات لديك</string>
+    <string name="no_driver_data">لايوجد سواقين لديك</string>
+
+    <string name="check_data">الرجاء إدخال جميع البيانات صحيحة</string>
+    <string name="check_driver">لرجاء إدخال إسم السائق</string>
+    <string name="check_car">لرجاء إدخال إسم السيارة</string>
+    <string name="check_NetWork">الرجاء التاكد من الإتصال بالإنترنت</string>
+    <string name="check_Login">الرجاء التاكد من الإسم و كلمة المرور</string>
+    <string name="no_oil_data">لايوجد بيانات لتغير الزيت</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <!-- String for dialog -->
+    <string name="edit">تـعديــــل</string>
+    <string name="name">اﻷســــــم</string>
+    <string name="cancel">إلغــــــاء</string>
+    <!--string for daily-->
+    <string name="kilos">الكيلو</string>
+    <string name="description">البيان</string>
+    <string name="change_oil">تغير زيت</string>
+    <string name="coast">المصروف</string>
+    <string name="date">التاريخ</string>
+    <string name="Merge_name">أسم المالك </string>
+    <string name="shift">الوردية</string>
+    <string name="collection">إجمالى</string>
+    <string name="night">مساءً</string>
+    <string name="morreing">صباحاً</string>
+    <string name="add_daily_success">تم إضافة اليومية بنجاح</string>
+    <string name="edit_daily_success">تم تعديل اليومية بنجاح</string>
+    <string name="user_name">إسم المستخدم</string>
+    <string name="password" translatable="false">كلمة المرور</string>
+    <string name="phone" translatable="false">رقم الهاتف</string>
+    <string name="impassword" translatable="false">الرمز السرى</string>
+    <string name="repeatedPhoneNumber">يوجد حساب بنفس رقم التليفون أوبنفس الأسم  الرجاء تغير الرقم أو الأسم</string>
+
+    <string name="collected_daily">حصر يومى</string>
+    <string name="merge_daily">الدمج اليومى</string>
+    <string name="search_daily">بحث</string>
+
+    <string name="wrongAccount">لايوجد حساب بهذا الإسم</string>
+    <string name="addNewCar">تم إضافة السيارة بنجاح</string>
+    <string name="addNewDriver">تم إضافة السائق بنجاح</string>
+    <string name="editNameDone">تم تعديل الإسم بنجاح</string>
+    <string name="deleteNameDone">تم مسح الإسم بنجاح</string>
+    <string name="deleteDailyDone">تم مسح اليومية بنجاح</string>
+
+    <string name="NoDaily">لايوجد يوميات </string>
+</resources>

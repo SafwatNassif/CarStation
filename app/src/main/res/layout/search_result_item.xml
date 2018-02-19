@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.daimajia.swipe.SwipeLayout
+        xmlns:swipe="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_marginTop="8dp"
+        android:id="@+id/single_details_item_search"
+        swipe:drag_edge="left"
+        swipe:rightEdgeSwipeOffset="2dp"
+        android:background="#2ccc"
+        >
+        <!--image of delete and edit-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:src="@android:drawable/ic_menu_delete"
+                android:id="@+id/delete_in_details_daily"
+                android:background="#2fff"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_menu_edit"
+                android:id="@+id/edit_in_details_daily"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="#2fff"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+        <!--container of information-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+            <View
+                android:layout_width="4dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/redColumn"
+                android:background="@color/colorPrimary"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/total_label"
+                android:layout_alignParentStart="true" />
+            <!--driver name label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/driver_name"
+                android:textSize="16dp"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:paddingLeft="8dp"
+                android:id="@+id/driver_name_label"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/redColumn"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/driver_name_of_search"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/driver_name_label" />
+            <!--shift label-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shift"
+                android:textSize="16dp"
+                android:gravity="left"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:paddingLeft="8dp"
+                android:layout_below="@+id/driver_name_of_search"
+                android:layout_toRightOf="@+id/redColumn"
+                android:id="@+id/shiftLabel"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/shift_time"
+                android:layout_marginRight="8dp"
+                android:textSize="16dp"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:layout_marginLeft="32dp"
+                android:layout_below="@+id/driver_name_of_search"
+                android:layout_toRightOf="@+id/shiftLabel"
+                />
+
+            <!-- daily label-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/daily"
+                android:textSize="16dp"
+                android:gravity="left"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:paddingLeft="8dp"
+                android:layout_below="@+id/shift_time"
+                android:layout_toRightOf="@+id/redColumn"
+                android:id="@+id/daily_label"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/daily_search_result"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_toRightOf="@+id/daily_label"
+                android:layout_below="@+id/shift_time"
+                />
+
+            <!--expense label-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/coast"
+                android:textSize="16dp"
+                android:gravity="left"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:paddingLeft="8dp"
+                android:id="@+id/expense_label"
+                android:layout_toRightOf="@+id/redColumn"
+                android:layout_below="@+id/daily_search_result"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cost_search_fragment"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="32dp"
+                android:textColor="#fff"
+                android:layout_toRightOf="@+id/expense_label"
+                android:layout_below="@+id/daily_search_result"
+                />
+
+            <!--total_label-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/collection"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:paddingLeft="8dp"
+                android:layout_toRightOf="@+id/redColumn"
+                android:layout_below="@+id/cost_search_fragment"
+                android:id="@+id/total_label"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/totalCost_search_fragment"
+                android:textSize="16dp"
+                android:gravity="top|center_horizontal"
+                android:textColor="#fff"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_below="@+id/cost_search_fragment"
+                android:layout_toRightOf="@+id/total_label"/>
+
+        </RelativeLayout>
+    </com.daimajia.swipe.SwipeLayout>
+</LinearLayout>

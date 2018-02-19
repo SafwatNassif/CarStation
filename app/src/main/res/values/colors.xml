@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e70000</color>
+    <color name="colorPrimaryDark">#cf0000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="item_back">#4FFF</color>
+    <color name="longPress">#3FFF</color>
+    <color name="activeProgress">#6FFF</color>
+    <color name="Default">#FAFAFA</color>
+
+
+    <color name="cancel_longpress">#0FFF</color>
+</resources>

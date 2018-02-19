@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginTop="16dp"
+        android:background="#2fff"
+        >
+        <View
+            android:layout_width="8dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+
+            ></View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:paddingBottom="16dp"
+                android:paddingTop="8dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_gravity="left"
+                    android:textSize="16dp"
+                    android:text="@string/driver_name"
+                    android:id="@+id/car_name" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="32dp"
+                    android:id="@+id/car_name_answer"
+                    />
+
+            </LinearLayout
+                >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:paddingBottom="8dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="@string/date"
+                    android:gravity="left|center_vertical"
+                    android:layout_gravity="left"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:id="@+id/date"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:gravity="center|center_vertical"
+                    android:layout_gravity="left"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="32dp"
+                    android:id="@+id/date_answer" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
